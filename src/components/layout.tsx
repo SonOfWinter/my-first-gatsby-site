@@ -10,7 +10,7 @@ import {
 
 type Props ={
   pageTitle: string,
-  children: React.ReactElement
+  children: React.ReactElement[]
 }
 const Layout = ({ pageTitle, children }: Props) => {
 
