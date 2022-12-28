@@ -4,6 +4,7 @@ import type {
   PageProps,
 } from 'gatsby'
 import Layout from '../components/layout'
+import Seo from '../components/seo';
 
 const about: React.FC<PageProps> = () => {
   return (
@@ -15,4 +16,4 @@ const about: React.FC<PageProps> = () => {
 
 export default about
 
-export const Head: HeadFC = () => <title>About me</title>
+export const Head: HeadFC = () => <Seo title="About me" />

@@ -7,6 +7,7 @@ import {
   navLinkItem,
   navLinkText
 } from './layout.module.css'
+import Header from './header';
 
 type Props ={
   pageTitle: string,
@@ -16,6 +17,7 @@ const Layout = ({ pageTitle, children }: Props) => {
 
   return (
     <div className={container}>
+      <Header />
       <nav>
         <ul className={navLinks}>
           <li className={navLinkItem}>
@@ -23,6 +25,9 @@ const Layout = ({ pageTitle, children }: Props) => {
           </li>
           <li className={navLinkItem}>
             <Link to="/about" className={navLinkText}>About</Link>
+          </li>
+          <li className={navLinkItem}>
+            <Link to="/blog" className={navLinkText}>Blog</Link>
           </li>
         </ul>
       </nav>
