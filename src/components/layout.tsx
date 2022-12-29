@@ -11,7 +11,7 @@ import Header from './header';
 
 type Props ={
   pageTitle: string,
-  children: React.ReactElement[]
+  children: React.ReactElement | React.ReactElement[]
 }
 const Layout = ({ pageTitle, children }: Props) => {
 
